@@ -7,8 +7,10 @@ import org.scjrbb.spring.cartao.model.Aluno;
 import org.scjrbb.spring.cartao.repository.AlunoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponses;
 
 @RestController
 public class PreCadastroController {
@@ -17,6 +19,10 @@ public class PreCadastroController {
     private AlunoRepository alunoRepository;
 
     @PostMapping("/precadastro")
+    @ApiOperation(value = "Efetua o precadastro dos alunos que podem ter acesso ao cartão")
+    @ApiResponses(value = {
+            @io.swagger.annotations.ApiResponse(code = 200, message = "Precadastro realizado com sucesso"),
+            @io.swagger.annotations.ApiResponse(code = 400, message = "Erro ao executar o precadastro") })
     public String preCadastro() {
 
         System.out.println("Efetuando o precadastro");
@@ -31,8 +37,8 @@ public class PreCadastroController {
 
                     if (linha.length() == 55 && linha.charAt(0) != '-') {
 
-                        Aluno aluno = new Aluno(linha.substring(0, 40), linha.substring(41, 48),
-                                linha.substring(49, 55));
+                        Aluno aluno = new Aluno(linha.substring(0, 40).trim(), linha.substring(41, 48).trim(),
+                                linha.substring(49, 55).trim());
                         alunoRepository.save(aluno);
                     }
 

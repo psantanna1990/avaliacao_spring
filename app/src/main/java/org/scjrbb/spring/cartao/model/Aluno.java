@@ -10,9 +10,9 @@ public class Aluno {
     }
 
     public Aluno(String nome, String matricula, String turma) {
-        this.nome = nome;
-        this.matricula = matricula;
-        this.turma = turma;
+        this.nome = nome.toUpperCase();
+        this.matricula = matricula.toUpperCase();
+        this.turma = turma.toUpperCase();
     }
 
     public String getNome() {
@@ -20,7 +20,7 @@ public class Aluno {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.nome = nome.toUpperCase();
     }
 
     public String getMatricula() {
@@ -28,7 +28,7 @@ public class Aluno {
     }
 
     public void setMatricula(String matricula) {
-        this.matricula = matricula;
+        this.matricula = matricula.toUpperCase();
     }
 
     public String getTurma() {
@@ -36,6 +36,6 @@ public class Aluno {
     }
 
     public void setTurma(String turma) {
-        this.turma = turma;
+        this.turma = turma.toUpperCase();
     }
 }
