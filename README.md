@@ -9,9 +9,11 @@ Pré-requisito:
 
 `Basta utilizar o comando docker-compose up --build`
 
-A Aplicação possui uma Service que roda na inicialização responsável por fazer o pré cadastro dos alunos,
+A Aplicação possui uma rota responsável por efetuar o pre-cadastro dos alunos.
 para efetuar o pre-cadastro favor adicionar o arquivo com os dados para o pré castro na raiz do projeto com o nome:
 **lista_alunos.txt**
+
+chamar a rota: **/precadastro** com o método **POST**
 
 ## Enunciado da Avaliação
 
