@@ -28,7 +28,7 @@ public class PreCadastroController {
         System.out.println("Efetuando o precadastro");
 
         try {
-            try (Scanner preCadastroScanner = new Scanner(new FileReader("lista_alunos.txt")).useDelimiter("\\n")) {
+            try (Scanner preCadastroScanner = new Scanner(new FileReader("/usr/local/lib/lista_alunos.txt")).useDelimiter("\\n")) {
                 while (preCadastroScanner.hasNextLine()) {
 
                     System.out.println("...");
