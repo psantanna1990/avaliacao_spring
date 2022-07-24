@@ -1,6 +1,6 @@
 FROM mongo:5.0.8
 
-COPY ./seed /
+# COPY ./seed /
 COPY startup.sh /
 RUN chmod +x ./startup.sh
 
