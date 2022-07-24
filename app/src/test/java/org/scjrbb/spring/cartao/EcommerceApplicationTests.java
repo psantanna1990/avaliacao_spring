@@ -1,4 +1,4 @@
-package org.scjrbb.persistence.ecommerce;
+package org.scjrbb.spring.cartao;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

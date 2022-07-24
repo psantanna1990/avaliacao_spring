@@ -1,10 +1,10 @@
-package org.scjrbb.persistence.ecommerce.controller;
+package org.scjrbb.spring.cartao.controller;
 
 import java.util.List;
 import java.util.Optional;
 
-import org.scjrbb.persistence.ecommerce.model.Product;
-import org.scjrbb.persistence.ecommerce.repository.ProductRepository;
+import org.scjrbb.spring.cartao.model.Product;
+import org.scjrbb.spring.cartao.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

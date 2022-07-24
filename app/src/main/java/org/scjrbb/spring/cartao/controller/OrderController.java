@@ -1,20 +1,20 @@
-package org.scjrbb.persistence.ecommerce.controller;
+package org.scjrbb.spring.cartao.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.scjrbb.persistence.ecommerce.model.Address;
-import org.scjrbb.persistence.ecommerce.model.Customer;
-import org.scjrbb.persistence.ecommerce.model.Order;
-import org.scjrbb.persistence.ecommerce.model.OrderCustomer;
-import org.scjrbb.persistence.ecommerce.model.OrderProduct;
-import org.scjrbb.persistence.ecommerce.model.Product;
-import org.scjrbb.persistence.ecommerce.model.dto.OrderDto;
-import org.scjrbb.persistence.ecommerce.model.dto.OrderProductDto;
-import org.scjrbb.persistence.ecommerce.repository.CustomerRepository;
-import org.scjrbb.persistence.ecommerce.repository.OrderRepository;
-import org.scjrbb.persistence.ecommerce.repository.ProductRepository;
+import org.scjrbb.spring.cartao.model.Address;
+import org.scjrbb.spring.cartao.model.Customer;
+import org.scjrbb.spring.cartao.model.Order;
+import org.scjrbb.spring.cartao.model.OrderCustomer;
+import org.scjrbb.spring.cartao.model.OrderProduct;
+import org.scjrbb.spring.cartao.model.Product;
+import org.scjrbb.spring.cartao.model.dto.OrderDto;
+import org.scjrbb.spring.cartao.model.dto.OrderProductDto;
+import org.scjrbb.spring.cartao.repository.CustomerRepository;
+import org.scjrbb.spring.cartao.repository.OrderRepository;
+import org.scjrbb.spring.cartao.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

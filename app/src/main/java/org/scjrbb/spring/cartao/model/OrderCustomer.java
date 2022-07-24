@@ -1,4 +1,4 @@
-package org.scjrbb.persistence.ecommerce.model;
+package org.scjrbb.spring.cartao.model;
 
 public class OrderCustomer {
     private String name;

@@ -1,35 +1,13 @@
 services:
-  app:
-    build: 
-      context: .
-      dockerfile: Dockerfile.maven
-    depends_on:
-      - mongodb
-    restart: always
-    ports:
-      - 8989:8989
-
-  mysql:
-    container_name: mysql
-    image: mysql:latest
-    command: --authentication_policy=mysql_native_password
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: ecommerce
-      MYSQL_USER: user
-      MYSQL_PASSWORD: user
-    volumes:
-      - ./init:/docker-entrypoint-initdb.d
-    ports:
-      - "3306:3306"
-      - "33060:33060"
-
-  # adminer:
-  #   image: adminer:latest
-  #   depends_on: mysql
+  # app:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.maven
+  #   depends_on:
+  #     - mongodb
+  #   restart: always
   #   ports:
-  #     - 8080:8080
+  #     - 8989:8989
 
   mongodb:
     image: mongo:latest
@@ -43,7 +21,7 @@ services:
 
   seed:
     container_name: seed
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile.mongo
     links:
@@ -67,4 +45,3 @@ services:
       - ME_CONFIG_MONGODB_PORT=27017
       - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
       - ME_CONFIG_OPTIONS_EDITORTHEME=default
-  

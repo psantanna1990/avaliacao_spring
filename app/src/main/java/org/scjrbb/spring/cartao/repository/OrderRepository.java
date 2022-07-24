@@ -1,9 +1,8 @@
-package org.scjrbb.persistence.ecommerce.repository;
+package org.scjrbb.spring.cartao.repository;
 
 import java.util.List;
 
-import org.scjrbb.persistence.ecommerce.model.Order;
-
+import org.scjrbb.spring.cartao.model.Order;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

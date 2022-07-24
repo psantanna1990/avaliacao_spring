@@ -1,13 +1,12 @@
-package org.scjrbb.persistence.ecommerce.controller;
+package org.scjrbb.spring.cartao.controller;
 
 import java.util.List;
 import java.util.Optional;
 
+import org.scjrbb.spring.cartao.model.Customer;
+import org.scjrbb.spring.cartao.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import org.scjrbb.persistence.ecommerce.model.Customer;
-import org.scjrbb.persistence.ecommerce.repository.CustomerRepository;
 
 @RestController
 public class CustomerController {

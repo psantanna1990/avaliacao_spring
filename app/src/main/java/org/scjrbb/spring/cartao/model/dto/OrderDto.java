@@ -1,4 +1,4 @@
-package org.scjrbb.persistence.ecommerce.model.dto;
+package org.scjrbb.spring.cartao.model.dto;
 
 import java.util.List;
 

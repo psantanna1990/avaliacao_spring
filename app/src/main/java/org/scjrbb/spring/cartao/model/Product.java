@@ -1,4 +1,4 @@
-package org.scjrbb.persistence.ecommerce.model;
+package org.scjrbb.spring.cartao.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

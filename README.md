@@ -1,10 +1,18 @@
-
 # Avaliação Spring
 
 Pré-requisito:
 
 - Docker
 - Postman
+
+## Utilizando a apliação
+
+`Basta utilizar o comando docker-compose up --build`
+
+A Aplicação possui uma Service que roda na inicialização responsável por fazer o pré cadastro dos alunos,
+para efetuar o pre-cadastro favor adicionar o arquivo com os dados para o pré castro na raiz do projeto com o nome:
+**lista_alunos.txt**
+
 ## Enunciado da Avaliação
 
 A FIAP resolveu criar seu próprio cartão de crédito para ser utilizado pelos
