@@ -16,26 +16,15 @@ public class PreCadastroController {
     @Autowired
     private AlunoRepository alunoRepository;
 
-    // @PostMapping("/precadastro")
-    // public String preCadastro() throws FileNotFoundException {
-
-    // PreCadastroService preCadastroService = new PreCadastroService();
-
-    // preCadastroService.init();s
-
-    // return "Pre cadastro";
-    // }
-
     @PostMapping("/precadastro")
     public String preCadastro() {
-        //
-        // return "Customer Added to Database. No, really.";
+
         System.out.println("Efetuando o precadastro");
 
         try {
             try (Scanner preCadastroScanner = new Scanner(new FileReader("lista_alunos.txt")).useDelimiter("\\n")) {
                 while (preCadastroScanner.hasNextLine()) {
-                    
+
                     System.out.println("...");
 
                     String linha = preCadastroScanner.nextLine();

@@ -15,6 +15,15 @@ para efetuar o pre-cadastro favor adicionar o arquivo com os dados para o pré c
 
 chamar a rota: **/precadastro** com o método **POST**
 
+
+## Swagger da aplicação
+
+O swagger pode ser encontrad na seguinte rota: 
+
+``
+http://localhost:8989/swagger-ui.html#/
+``
+
 ## Enunciado da Avaliação
 
 A FIAP resolveu criar seu próprio cartão de crédito para ser utilizado pelos
