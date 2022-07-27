@@ -60,34 +60,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "CadastrarCliente (Existente)",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"AARON FELIPE GRASSMANN\",\r\n    \"telefone\": \"61 99999-9999\",\r\n    \"email\": \"teste@teste.com\",\r\n    \"cpf\": \"321321321-42\",\r\n    \"matricula\": \"00000000\",\r\n    \"turma\": \"123-12\",\r\n    \"endereco\": {\r\n        \"rua\": \"xpto\",\r\n        \"numero\": \"15\",\r\n        \"complemento\": \"ap23\",\r\n        \"bairro\": \"jd Mangueiral\",\r\n        \"cidade\": \"brasilia\",\r\n        \"estado\": \"df\",\r\n        \"cep\": \"09780-540\"\r\n\r\n    },\r\n    \"numeroCartao\": \"11111111111111\",\r\n    \"limiteCartao\": 10000.00\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8989/cliente",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8989",
-					"path": [
-						"cliente"
-					]
-				}
-			},
-			"response": []
 		}
 	]
 }
