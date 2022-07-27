@@ -1,19 +1,27 @@
 # Avaliação Spring
 
-Pré-requisito:
+Pré-requisitos para execução:
 
 - Docker
+- Docker Compose
 - Postman
 
-## Utilizando a apliação
+Tecnologias utilizadas:
 
-Basta utilizar o comando `docker-compose up --build`
+- Spring
+- MongoDB
+    base NoSQL preferida pelos componentes do grupo pela simplicidade, facilidade de uso e ausência de frescura pra inserir e manipular dados
+- OpenAPI (Swagger)
 
-A Aplicação possui uma rota responsável por efetuar o pre-cadastro dos alunos.
-para efetuar o pre-cadastro favor adicionar o arquivo com os dados para o pré castro na raiz do projeto com o nome:
-**lista_alunos.txt**
+## Utilizando a aplicação
 
-chamar a rota: **/precadastro** com o método **POST**
+Basta utilizar o comando `docker-compose up`
+
+A Aplicação possui uma rota responsável por efetuar o cadastro inicial dos alunos.
+
+O arquivo texto com a carga inicial já está na raiz do repositório.
+
+Chamar a rota: **/cadastro** com o método **POST**
 
 ## Swagger da aplicação
 
