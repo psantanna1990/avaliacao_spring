@@ -1,15 +1,15 @@
 ---
 services:
-  app:
-    container_name: app
-    build:
-      context: .
-      dockerfile: Dockerfile.maven
-    depends_on:
-      - mongodb
-    restart: always
-    ports:
-      - 8989:8989
+  # app:
+  #   container_name: app
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.maven
+  #   depends_on:
+  #     - mongodb
+  #   restart: always
+  #   ports:
+  #     - 8989:8989
 
   mongodb:
     image: mongo:latest
