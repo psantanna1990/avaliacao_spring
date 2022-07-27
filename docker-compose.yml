@@ -1,13 +1,15 @@
+---
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile.maven
-    depends_on:
-      - mongodb
-    restart: always
-    ports:
-      - 8989:8989
+  # app:
+  #   container_name: app
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.maven
+  #   depends_on:
+  #     - mongodb
+  #   restart: always
+  #   ports:
+  #     - 8989:8989
 
   mongodb:
     image: mongo:latest
@@ -15,20 +17,13 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_DATABASE=ecommerce
+      - MONGO_INITDB_DATABASE=credit_card
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
 
-  seed:
-    container_name: seed
-    build:
-      context: .
-      dockerfile: Dockerfile.mongo
-    links:
-      - mongodb
-
   mongo-express:
     image: mongo-express:latest
+    container_name: mongo-express
     depends_on:
       - mongodb
     restart: unless-stopped

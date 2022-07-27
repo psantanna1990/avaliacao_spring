@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EcommerceApplication {
+public class CreditCardApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(EcommerceApplication.class, args);
+		SpringApplication.run(CreditCardApplication.class, args);
 
 	}
 

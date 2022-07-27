@@ -8,9 +8,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.1scjrbb.persistence</groupId>
-	<artifactId>ecommerce</artifactId>
+	<artifactId>credit_card</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ecommerce</name>
+	<name>credit_card</name>
 	<description>Trabalho final em grupo do MBA de Persistence da FIAP</description>
 	<properties>
 		<java.version>11</java.version>

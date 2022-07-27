@@ -11,7 +11,7 @@ RUN mvn -f /home/app/pom.xml clean package
 # Package stage
 #
 FROM openjdk:11-jre-slim
-COPY --from=build /home/app/target/ecommerce-0.0.1-SNAPSHOT.jar /usr/local/lib/ecommerce.jar
+COPY --from=build /home/app/target/credit_card-0.0.1-SNAPSHOT.jar /usr/local/lib/credit_card.jar
 COPY ./lista_alunos.txt usr/local/lib/lista_alunos.txt
 EXPOSE 8089
-ENTRYPOINT ["java","-jar","/usr/local/lib/ecommerce.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/credit_card.jar"]
