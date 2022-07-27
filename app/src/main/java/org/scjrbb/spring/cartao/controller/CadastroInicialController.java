@@ -13,7 +13,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponses;
 
 @RestController
-public class CadastroController {
+public class CadastroInicialController {
 
     @Autowired
     private AlunoRepository alunoRepository;
