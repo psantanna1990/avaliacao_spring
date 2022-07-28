@@ -34,6 +34,8 @@ Os arquivos texto com as cargas iniciais já estão na raiz do repositório.
 
 6 - Usando `GET`, o endpoint `\extrato` obtém todas as transações efetuadas pelo cartão informado no parâmetro `cartao`.
 
+> O arquivo `./Cartao.postman_collection` possui todas as chamadas REST já devidamente configuradas para uso, basta importar como uma Collection no Postman.
+
 ## Swagger da aplicação
 
 O swagger pode ser encontrad na seguinte rota:
