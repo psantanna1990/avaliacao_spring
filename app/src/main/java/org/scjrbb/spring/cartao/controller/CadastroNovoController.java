@@ -3,9 +3,7 @@ package org.scjrbb.spring.cartao.controller;
 import java.util.List;
 
 import org.scjrbb.spring.cartao.model.Aluno;
-// import org.scjrbb.spring.cartao.model.ClienteCartao;
 import org.scjrbb.spring.cartao.repository.AlunoRepository;
-// import org.scjrbb.spring.cartao.repository.ClienteCartaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,9 +19,6 @@ public class CadastroNovoController {
 
     @Autowired
     private AlunoRepository alunoRepository;
-
-    // @Autowired
-    // private ClienteCartaoRepository clienteCartaoRepository;
 
     @PostMapping("/novo")
     @ApiOperation(value = "Efetua o cadastro de um novo aluno")
