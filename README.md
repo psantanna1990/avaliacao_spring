@@ -32,7 +32,9 @@ Os arquivos texto com as cargas iniciais já estão na raiz do repositório.
 
 5 - Usando `POST`, o endpoint `\novo` cadastra um novo aluno mediante payload em json com os dados básicos.
 
-6 - Usando `GET`, o endpoint `\extrato` obtém todas as transações efetuadas pelo cartão informado no parâmetro `cartao`.
+6 - Usando `POST`, o endpoint `\trasnsacao` insere uma nova transação de cartão dado o payload em json com os dados da mesma.
+
+7 - Usando `GET`, o endpoint `\extrato` obtém todas as transações efetuadas pelo cartão informado no parâmetro `cartao`.
 
 > O arquivo `./Cartao.postman_collection` possui todas as chamadas REST já devidamente configuradas para uso, basta importar como uma Collection no Postman.
 
