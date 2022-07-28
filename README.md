@@ -34,8 +34,6 @@ Os arquivos texto com as cargas iniciais já estão na raiz do repositório.
 
 6 - Usando `GET`, o endpoint `\extrato` obtém todas as transações efetuadas pelo cartão informado no parâmetro `cartao`.
 
-Chamar a rota: **/cadastro** com o método **POST**
-
 ## Swagger da aplicação
 
 O swagger pode ser encontrad na seguinte rota:
