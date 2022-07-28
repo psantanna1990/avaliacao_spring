@@ -12,7 +12,7 @@ Assegure-se de que estas ferramentas estão instaladas e funcionando:
 
 - **Docker**
 
-> evita o "mas na minha máquina funciona, garante um ambiente de execução homogêneo e fácil de distribuir.
+> evita o "mas na minha máquina funciona", garante um ambiente de execução homogêneo e fácil de distribuir.
 
 - **MongoDB**
 
