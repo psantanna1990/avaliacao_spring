@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponses;
 
-// TODO: Testar esse carinha com o arquivo de massa de transações (transacoes.json)
-
 @RestController
 public class InserirTransacaoController {
     

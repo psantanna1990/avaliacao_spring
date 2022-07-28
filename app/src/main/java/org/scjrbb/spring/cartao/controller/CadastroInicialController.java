@@ -28,7 +28,7 @@ public class CadastroInicialController {
         System.out.println("Efetuando o cadastro");
 
         try {
-            try (Scanner cadastroScanner = new Scanner(new FileReader("./lista_alunos.txt")).useDelimiter("\\n")) {
+            try (Scanner cadastroScanner = new Scanner(new FileReader("/usr/local/lib/lista_alunos.txt")).useDelimiter("\\n")) {
                 int counter = 0;
                 while (cadastroScanner.hasNextLine()) {
 

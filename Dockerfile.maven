@@ -1,7 +1,8 @@
 #
 # Build stage
 #
-FROM maven:3.6.0-jdk-11-slim AS build
+FROM maven:3.6.0-jdk-11-slim AS Build
+
 COPY ./app/src/ /home/app/src
 COPY ./app/pom.xml /home/app
 
@@ -12,6 +13,9 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 FROM openjdk:11-jre-slim
 COPY --from=build /home/app/target/credit_card-0.0.1-SNAPSHOT.jar /usr/local/lib/credit_card.jar
-COPY ./lista_alunos.txt usr/local/lib/lista_alunos.txt
+
+COPY ./transacoes.csv /usr/local/lib/transacoes.csv
+COPY ./lista_alunos.txt /usr/local/lib/lista_alunos.txt
+
 EXPOSE 8089
 ENTRYPOINT ["java","-jar","/usr/local/lib/credit_card.jar"]

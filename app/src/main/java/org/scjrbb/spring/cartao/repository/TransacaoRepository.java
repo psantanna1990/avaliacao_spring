@@ -11,6 +11,8 @@ public interface TransacaoRepository extends MongoRepository<Transacao, String> 
     @Query("{id: '?0'")
     List<Transacao> findAll(String transacao);
 
+    List<Transacao> findByCartao(String cartao);
+
     public long count();
 
 }

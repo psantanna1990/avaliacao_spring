@@ -26,7 +26,7 @@ public class InserirTransacaoBatchController {
     })
 
     public String cadastrarTransacao(String file) {
-        file = "transacoes.csv";
+        file = "/usr/local/lib/transacoes.csv";
 
         System.out.println("GO TRANSACOES, GO!!!");
         try {

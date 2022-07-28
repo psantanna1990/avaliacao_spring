@@ -60,6 +60,87 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Inserir Transação Avulsa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":\"06/07/2022\",\"beneficiario\":\"McDonald's\",\"valor\":69.69,\"cartao\":\"4607455755-25\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8989/transacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"transacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir Batch de Transações",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8989/batch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"batch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Extrato com número do Cartão",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8989/extrato?cartao=4607455755-25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"extrato"
+					],
+					"query": [
+						{
+							"key": "cartao",
+							"value": "4607455755-25"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

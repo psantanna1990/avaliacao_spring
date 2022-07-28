@@ -1,25 +1,38 @@
 # Avaliação Spring
 
-Pré-requisitos para execução:
+## Pré-requisitos para execução
+
+Assegure-se de que estas ferramentas estão instaladas e funcionando:
 
 - Docker
 - Docker Compose
 - Postman
 
-Tecnologias utilizadas:
+## Tecnologias extras utilizadas e justificativas pertinentes
 
-- Spring
-- MongoDB
-    base NoSQL preferida pelos componentes do grupo pela simplicidade, facilidade de uso e ausência de frescura pra inserir e manipular dados
-- OpenAPI (Swagger)
+- **Docker**
+
+> evita o "mas na minha máquina funciona, garante um ambiente de execução homogêneo e fácil de distribuir.
+
+- **MongoDB**
+
+> base NoSQL preferida pelos componentes do grupo pela simplicidade, facilidade de uso e ausência de frescura pra inserir e manipular dados
 
 ## Utilizando a aplicação
 
-Basta utilizar o comando `docker-compose up`
+1 - Navegar até a raíz do projeto
 
-A Aplicação possui uma rota responsável por efetuar o cadastro inicial dos alunos.
+2 - Executar comando `docker-compose up`
 
-O arquivo texto com a carga inicial já está na raiz do repositório.
+3 - Chamar endpoint `\cadastro` com o método `POST` para automagicamente fazer o cadastro inicial dos alunos conforme txt disponibilizado.
+
+4 - Chamar endpoint `\batch` com o método `POST` para fazer a inserção em massa de transações simuladas.
+
+Os arquivos texto com as cargas iniciais já estão na raiz do repositório.
+
+5 - Usando `POST`, o endpoint `\novo` cadastra um novo aluno mediante payload em json com os dados básicos.
+
+6 - Usando `GET`, o endpoint `\extrato` obtém todas as transações efetuadas pelo cartão informado no parâmetro `cartao`.
 
 Chamar a rota: **/cadastro** com o método **POST**
 
